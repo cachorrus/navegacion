@@ -1,0 +1,9 @@
+
+export { Ajustes2Page } from './ajustes2/ajustes2';
+export { ModalPage } from './modal/modal';
+export { Pagina1Page } from './pagina1/pagina1';
+export { Pagina2Page } from './pagina2/pagina2';
+export { Pagina3Page } from './pagina3/pagina3';
+export { PrincipalPage } from './principal/principal';
+export { TabsPage } from './tabs/tabs';
+export { AjustesPage } from './ajustes/ajustes';

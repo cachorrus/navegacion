@@ -1,0 +1,36 @@
+<!--
+  Generated template for the Pagina2Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Página 2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <h1> Enviando con eventos....</h1>
+  
+  <ion-list>
+    <button ion-item *ngFor="let politico of politicos" (click)="irPagina3( politico)">
+      {{ politico.nombre }}
+    </button>  
+  </ion-list> 
+
+  <h1> Enviando con HTML....</h1>
+  
+  <ion-list>
+    <button ion-item *ngFor="let politico of politicos" 
+      [navPush]="pagina3"  
+      [navParams]= "{ 'politico': politico }" >
+      {{ politico.nombre }}
+    </button>  
+  </ion-list> 
+
+</ion-content>
